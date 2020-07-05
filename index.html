@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./material-icons.css">
+    <link rel="stylesheet" href="./materialize.min.css">
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="./index.css">
+    
+
+    <title>Mundka Accounts</title>
+</head>
+<body>
+<div class="main">
+   <div class="box1">
+       <div class="con-1"><h1 class="sc1">Mundka Steel</h1></div>
+       <div class="con-2"><h1 class="sc"><a href="index.html">Transactions</a></h1></div>
+       <div class="con-3"><h1 class="sc"><a href="stock.html">Stock Ledger</a></h1></div>
+       <div class="con-4"><h1 class="sc"><a href="cash.html">Cash Ledger</a></h1></div>
+       <div class="con-5"><h1 class="sc"><a href="order.html">Orders</a></h1></div>    
+   </div>
+   <div class="box2">
+       <div class="dd">
+  <h2 class="ee">TRANSACTIONS</h2>
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-red w3-padding ff">STOCK ENTRY</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-red w3-padding ff">CASH ENTRY</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-red w3-padding ff">ORDER ENTRY</div>
+    </a>
+  </div>
+  <div id="London" class="w3-container city kk">
+   <div class="w3-row-padding jj">
+  <div class="w3-third">
+      <label>Date</label>
+    <input class="datepicker w3-input w3-border w3-pale-red" type="text" id="o111" >
+  </div>
+  <div class="w3-third">
+      <label>Account Name</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o222">
+  </div>
+  <div class="w3-third">
+      <label>Transaction Type</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o333">
+  </div>
+</div> 
+   <div class="w3-row-padding">
+  <div class="w3-half">
+    <label>Inward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o444">
+  </div>
+  <div class="w3-half">
+    <label>Outward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o555">
+  </div>
+</div> 
+ <div class="w3-row-padding">
+  <div class="w3-half">
+    <label>Item</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o666">
+  </div>
+   <div class="w3-half">
+    <label>Price</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o777">
+  </div>
+  <button onclick="datasave3()" class="w3-btn w3-black mm"><i class="material-icons">near_me</i>&nbsp;&nbsp;&nbsp;Save</button>
+</div> 
+
+
+  
+
+    
+  </div>
+
+  <div id="Paris" class="w3-container city kk" style="display:none">
+    <div class="w3-row-padding jj">
+  <div class="w3-half">
+      <label>Date</label>
+    <input class="datepicker w3-input w3-border w3-pale-red" type="text" placeholder="" id="o11">
+  </div>
+  <div class="w3-half">
+      <label>Account Name</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o22">
+  </div>
+</div> 
+   <div class="w3-row-padding">
+  <div class="w3-half">
+    <label>Inward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o33">
+  </div>
+  <div class="w3-half">
+    <label>Outward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" type="text" placeholder="" id="o44">
+  </div>
+</div> 
+ <button onclick="datasave2()" class="w3-btn w3-black mm"><i class="material-icons">near_me</i>&nbsp;&nbsp;&nbsp;Save</button>
+  </div>
+
+  <div id="Tokyo" class="w3-container city kk" style="display:none">
+     <div class="w3-row-padding jj">
+  <div class="w3-third">
+      <label>Date</label>
+    <input class="datepicker w3-input w3-border w3-pale-red" id="o1" type="text" placeholder="">
+  </div>
+  <div class="w3-third">
+      <label>Account Name</label>
+    <input class="w3-input w3-border w3-pale-red" id="o2" type="text" placeholder="">
+  </div>
+  <div class="w3-third">
+      <label>Item</label>
+    <input class="w3-input w3-border w3-pale-red" id="o3" type="text" placeholder="">
+  </div>
+</div> 
+   <div class="w3-row-padding">
+  <div class="w3-third">
+    <label>Inward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" id="o4" type="text" placeholder="">
+  </div>
+  <div class="w3-third">
+    <label>Outward(K.G)</label>
+    <input class="w3-input w3-border w3-pale-red" id="o5" type="text" placeholder="">
+  </div>
+  <div class="w3-third">
+    <label>Price</label>
+    <input class="w3-input w3-border w3-pale-red" id="o6" type="text" placeholder="">
+  </div>
+</div> 
+ <div class="w3-row-padding">
+  
+  <button onclick="datasave()" class="w3-btn w3-black mm"><i class="material-icons">near_me</i>&nbsp;&nbsp;&nbsp;Save</button>
+  
+  
+        
+</div> 
+  </div>
+</div>
+   </div>
+</div>    
+</body>
+<script src="./w3.js"></script>
+<script src="./nedb.min.js"></script>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./materialize.min.js"></script>
+<script src="./index.js"></script>
+</html>

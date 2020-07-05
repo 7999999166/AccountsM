@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./material-icons.css">
+    <link rel="stylesheet" href="./materialize.min.css">
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Mundka Accounts</title>
+</head>
+<body>
+ <div class="main1">
+   <div class="box1">
+       <div class="con-1"><h1 class="sc1"><a href="index.html">Mundka Steel</a></h1></div>
+       <div class="con-2"><h1 class="sc"><a href="index.html">Transactions</a></h1></div>
+       <div class="con-3"><h1 class="sc"><a href="stock.html">Stock Ledger</a></h1></div>
+       <div class="con-4"><h1 class="sc"><a href="cash.html">Cash Ledger</a></h1></div>
+       <div class="con-5"><h1 class="sc"><a href="order.html">Orders</a></h1></div>    
+   </div>
+    <h1 class="stk">Orders</h1>
+     <table id="id01" class="w3-table w3-centered w3-striped" >
+<tr>
+  <th>Date</th>
+  <th>Account Name</th>
+  <th>Item</th>
+  <th>Inward</th>
+  <th>Outward</th>
+  <th>Price</th>
+</tr>
+<tr w3-repeat="orders">
+  <td>{{Date}}</td>
+  <td>{{AccountName}}</td>
+  <td>{{Item}}</td>
+  <td>{{Inward}}</td>
+  <td>{{Outward}}</td>
+  <td>{{Price}}</td>
+</tr>
+</table>
+</div>
+</body>
+<script src="./w3.js"></script>
+<script src="./nedb.min.js"></script>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./materialize.min.js"></script>
+<script src="./index.js"></script>
+</html>
